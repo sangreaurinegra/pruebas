@@ -1,0 +1,25 @@
+
+latex
+plantuml.jar "C:\Users\gabriel.centurion\Desktop\planUml\ejemplos" -latex
+
+sin el preambulo del documento (y con directorio de salida)
+
+plantuml.jar "C:\Users\gabriel.centurion\Desktop\planUml\ejemplos" -latex -latex:nopreamble -o "C:\Users\gabriel.centurion\Desktop\planUml\ejemplos\clasesNp"
+
+Temas 
+!theme reddress-lightblue
+plain
+scketchy
+reddress-lightorange
+
+Config *** Ejemplo
+
+test1.txt:
+@startuml
+Alice->Bob : hello
+@enduml
+
+config.txt:
+skinparam handwritten true
+
+Config *** Ejemplo

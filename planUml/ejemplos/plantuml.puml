@@ -1,0 +1,143 @@
+@startuml
+
+class PreparacionDepositoAtmIsoResponse [[java:com.financial.atm.brou.vo.http2iso.PreparacionDepositoAtmIsoResponse]] {
+	-{static} serialVersionUID: long
+	-idTerminalMiniATM: long
+	-fechaTerminal: Date
+	-horaTerminal: String
+	-mensaje: String
+	-confirmacionDeCuenta: boolean
+	+getIdTransaccionATM(): long
+	+setIdTransaccionATM(idTransaccionATM: int): void
+	+getIdTerminalMiniATM(): long
+	+setIdTerminalMiniATM(idTerminalMiniATM: int): void
+	+getNroTransaccion(): String
+	+setNroTransaccion(nroTransaccion: String): void
+	+getFechaTerminal(): Date
+	+setFechaTerminal(fechaTerminal: Date): void
+	+getHoraTerminal(): String
+	+setHoraTerminal(horaTerminal: String): void
+	+getCodigoRespuesta(): String
+	+setCodigoRespuesta(codigoRespuesta: String): void
+	+getMensaje(): String
+	+setMensaje(mensaje: String): void
+	+isConfirmacionDeCuenta(): boolean
+	+setConfirmacionDeCuenta(confirmacionDeCuenta: boolean): void
+	+setIdTerminalMiniATM(idTerminalMiniATM: long): void
+}
+class TransaccionAtmIsoResponse {
+}
+TransaccionAtmIsoResponse <|-- PreparacionDepositoAtmIsoResponse
+class ConfirmacionCuentaDepositoAtmIsoResponse [[java:com.financial.atm.brou.vo.http2iso.ConfirmacionCuentaDepositoAtmIsoResponse]] {
+	~confirmacion: boolean
+	~error: boolean
+	+isConfirmacion(): boolean
+	+setConfirmacion(confirmacion: boolean): void
+	+isError(): boolean
+	+setError(error: boolean): void
+}
+class ValueObjectAXS {
+}
+ValueObjectAXS <|-- ConfirmacionCuentaDepositoAtmIsoResponse
+class ConfirmacionCuentaDepositoAtmIsoRequest [[java:com.financial.atm.brou.vo.http2iso.ConfirmacionCuentaDepositoAtmIsoRequest]] {
+	-{static} serialVersionUID: long
+	+ConfirmacionCuentaDepositoAtmIsoRequest()
+}
+class TransaccionAtmIsoRequest {
+}
+TransaccionAtmIsoRequest <|-- ConfirmacionCuentaDepositoAtmIsoRequest
+class TransaccionAtmIsoResponse [[java:com.financial.atm.brou.vo.http2iso.TransaccionAtmIsoResponse]] {
+	-{static} serialVersionUID: long
+	#idTransaccionATM: long
+	#nroTransaccion: String
+	#codigoRespuesta: String
+	+getIdTransaccionATM(): long
+	+setIdTransaccionATM(idTransaccionATM: long): void
+	+getNroTransaccion(): String
+	+setNroTransaccion(nroTransaccion: String): void
+	+getCodigoRespuesta(): String
+	+setCodigoRespuesta(codigoRespuesta: String): void
+}
+class ValueObjectAXS {
+}
+ValueObjectAXS <|-- TransaccionAtmIsoResponse
+class TransaccionAtmIsoRequest [[java:com.financial.atm.brou.vo.http2iso.TransaccionAtmIsoRequest]] {
+	+{static} TIPO_DEPOSITO: int
+	-{static} serialVersionUID: long
+	#tipo: int
+	#idTerminalFicticia: long
+	#adquirente: int
+	#tipoCuenta: String
+	#monedaCuenta: int
+	+TransaccionAtmIsoRequest(tipo: int)
+	+getTipo(): int
+	+setTipo(tipo: int): void
+	+getAdquirente(): int
+	+setAdquirente(adquirente: int): void
+	+getTipoCuenta(): String
+	+setTipoCuenta(tipoCuenta: String): void
+	+getMonedaCuenta(): int
+	+setMonedaCuenta(monedaCuenta: int): void
+	+getIdTerminalFicticia(): long
+	+setIdTerminalFicticia(idTerminalFicticia: long): void
+}
+class ValueObjectAXS {
+}
+ValueObjectAXS <|-- TransaccionAtmIsoRequest
+class PreparacionDepositoAtmIsoRequest [[java:com.financial.atm.brou.vo.http2iso.PreparacionDepositoAtmIsoRequest]] {
+	-{static} serialVersionUID: long
+	+{static} MOTIVO_SUELDOS: String
+	+{static} MOTIVO_HONORARIOS_PROFESIONALES: String
+	+{static} MOTIVO_SERVICIOS_PERSONALES: String
+	+{static} MOTIVO_PROVEEDORES: String
+	+{static} MOTIVO_ALQUILERES: String
+	+{static} MOTIVO_ALQUILERES_INMOBILIARIA: int
+	+{static} MOTIVO_ALQUILERES_TITULAR: int
+	+{static} MOTIVO_OTROS: String
+	+{static} PAIS_URUGUAY: String
+	+{static} PAIS_URUGUAY_CI: int
+	+{static} PAIS_URUGUAY_RUC: int
+	+{static} PAIS_URUGUAY_PASAPORTE: int
+	+{static} PAIS_ARGENTINA: String
+	+{static} PAIS_ARGENTINA_DNI: int
+	+{static} PAIS_ARGENTINA_PASAPORTE: int
+	+{static} PAIS_ARGENTINA_OTROS: int
+	+{static} PAIS_BRASIL: String
+	+{static} PAIS_BRASIL_PASAPORTE: int
+	+{static} PAIS_BRASIL_OTROS: int
+	+{static} PAIS_OTRO: String
+	+{static} PAIS_OTRO_PASAPORTE: int
+	+{static} PAIS_OTRO_OTROS: int
+	-importe: double
+	-nroCuenta: String
+	-moneda: int
+	-motivo: String
+	-tipoDocumento: int
+	-nroDocumento: String
+	-pais: String
+	-referencia: String
+	-versionapp: String
+	+PreparacionDepositoAtmIsoRequest()
+	+getImporte(): double
+	+setImporte(importe: double): void
+	+getNroCuenta(): String
+	+setNroCuenta(nroCuenta: String): void
+	+getMoneda(): int
+	+setMoneda(moneda: int): void
+	+getMotivo(): String
+	+setMotivo(motivo: String): void
+	+getTipoDocumento(): int
+	+setTipoDocumento(tipoDocumento: int): void
+	+getNroDocumento(): String
+	+setNroDocumento(nroDocumento: String): void
+	+getPais(): String
+	+setPais(pais: String): void
+	+getReferencia(): String
+	+setReferencia(referencia: String): void
+	+getVersionapp(): String
+	+setVersionapp(versionapp: String): void
+}
+class TransaccionAtmIsoRequest {
+}
+TransaccionAtmIsoRequest <|-- PreparacionDepositoAtmIsoRequest
+@enduml
