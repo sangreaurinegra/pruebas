@@ -68,9 +68,9 @@ public class DivModYBucles {
 
 			System.out.println("parametrosPartidasInvolucradosIter "+parametrosPartidasInvolucradosIter);
 
-			String  SQL_PARTIDAS_INVALIDAS = "select pl.IDPARTIDALOCAL from ONLINE.PARTIDALOCAL pl where pl.IDPARTIDALOCAL in ("+parametrosPartidasInvolucradosIter+") and pl.ESTADOVALIDEZ <> 1";
+			String sql = "select ..............";
 
-			System.out.println(SQL_PARTIDAS_INVALIDAS);
+			System.out.println(sql);
 
 
 			//seteo los parametros
