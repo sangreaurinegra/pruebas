@@ -1,7 +1,5 @@
 package com.string;
 
-import com.util.NumberUtilities;
-
 public class DoubleStr {
 
 	public static void main(String[] args) {
@@ -10,13 +8,13 @@ public class DoubleStr {
 //		String monto = pdMonto+"";
 		
 		double pDMonto = 10000.00; 
-		String monto = NumberUtilities.format(pDMonto, 2);
+//		String monto = NumberUtilities.format(pDMonto, 2);
 		
 		System.out.println("double pDMonto = 10000.00; "+pDMonto);
-		System.out.println("NumberUtilities.format(pDMonto, 2);"+ monto);
+//		System.out.println("NumberUtilities.format(pDMonto, 2);"+ monto);
 		
-		String monto2 = NumberUtilities.format(pDMonto, 2).replace(".", "");
-		System.out.println("NumberUtilities.format(pDMonto, 2).replace(\".\", \"\"); "+monto2);
+//		String monto2 = NumberUtilities.format(pDMonto, 2).replace(".", "");
+//		System.out.println("NumberUtilities.format(pDMonto, 2).replace(\".\", \"\"); "+monto2);
 		
 		
 		System.out.println("---------------------------");
@@ -31,7 +29,7 @@ public class DoubleStr {
 		
 		System.out.println("remplace Format " + pdoubleFormat.replace(".", "").replace(",", ""));
 		
-		System.out.println("remplace Round y format " + (NumberUtilities.format(pdoubleRound, 2)).replace(".", "").replace(",", ""));
+//		System.out.println("remplace Round y format " + (NumberUtilities.format(pdoubleRound, 2)).replace(".", "").replace(",", ""));
 		
 	}
 	

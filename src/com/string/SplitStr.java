@@ -149,30 +149,30 @@ public class SplitStr {
 	 * @param montoCredito
 	 * @return
 	 */
-	private static String fomartoArchivoScotia(String montoCredito) {
-
-		if(montoCredito!=null && montoCredito.contains(".")){
-			String[] lala = montoCredito.split("\\.") ;
-			
-			if(lala[1].length()==1){
-				montoCredito = montoCredito.replace(".", "")+"0";
-			}else{
-				montoCredito = montoCredito.replace(".", "");
-			}
-
-		}
-
-		return montoCredito;
-	}
-
-	
-	private static String campo35toNroTarjeta(String campo35){
-		
-		//<field id="35" value="4213000010062219=2610526658"/>
-
-		return  campo35.split("=")[0];
-	}
-	
+//	private static String fomartoArchivoScotia(String montoCredito) {
+//
+//		if(montoCredito!=null && montoCredito.contains(".")){
+//			String[] lala = montoCredito.split("\\.") ;
+//			
+//			if(lala[1].length()==1){
+//				montoCredito = montoCredito.replace(".", "")+"0";
+//			}else{
+//				montoCredito = montoCredito.replace(".", "");
+//			}
+//
+//		}
+//
+//		return montoCredito;
+//	}
+//
+//	
+//	private static String campo35toNroTarjeta(String campo35){
+//		
+//		//<field id="35" value="4213000010062219=2610526658"/>
+//
+//		return  campo35.split("=")[0];
+//	}
+//	
 	
 	
 	

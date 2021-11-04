@@ -1,4 +1,4 @@
-package com.pruebas.xls.proto;
+package com.xls.proto;
 
 import java.util.Date;
 
@@ -20,16 +20,16 @@ public class Employee {
     public Employee(String name, int age, double payment, double bonus, Date birthDate) {
         this.name = name;
         this.age = age;
-        this.payment = new Double(payment);
-        this.bonus = new Double(bonus);
+        this.payment = payment;
+        this.bonus = bonus;
         this.birthDate = birthDate;
     }
 
     public Employee(String name, int age, double payment, double bonus) {
         this.name = name;
         this.age = age;
-        this.payment = new Double(payment);
-        this.bonus = new Double(bonus);
+        this.payment = payment;
+        this.bonus = bonus;
     }
 
     public String getName() {

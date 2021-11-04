@@ -1,6 +1,5 @@
 package com.firma;
 
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.net.URLDecoder;
@@ -8,12 +7,8 @@ import java.security.KeyStore;
 import java.security.PrivateKey;
 import java.security.Signature;
 import java.util.ArrayList;
-import java.util.List;
-
-import com.misc.Base64Utilities;
-import com.util.SystemProperties;
-
 import java.util.Base64;
+import java.util.List;
 
 public class FirmaConKeystore {
 
@@ -74,8 +69,9 @@ public class FirmaConKeystore {
 	    
 	    //String signature = new BASE64Encoder().encode(digitalSignature);
 	    
-	    ByteArrayInputStream baImpstr = new ByteArrayInputStream(digitalSignature);
-		String signature = Base64Utilities.encode(baImpstr);
+//	    ByteArrayInputStream baImpstr = new ByteArrayInputStream(digitalSignature);
+	    
+		String signature = Base64.getEncoder().encodeToString(digitalSignature); // TODO, validar
 	    
 		System.out.println("Firma");
 		System.out.println(signature); 

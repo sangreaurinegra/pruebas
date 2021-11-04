@@ -1,4 +1,4 @@
-package com.pruebas.date;
+package com.date;
 
 import java.sql.Time;
 

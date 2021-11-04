@@ -1,7 +1,5 @@
 package com.bite;
 
-import java.util.BitSet;
-
 public class PruebaByteSet {
 
 	public static void main(String[] args) {
@@ -9,7 +7,7 @@ public class PruebaByteSet {
 		// TODO Auto-generated method stub
 		
 		
-		 byte[] b = hexStringToByteArray("00110011323632323639393036"); 
+//		 byte[] b = hexStringToByteArray("00110011323632323639393036"); 
 //		
 //		 ISOBinaryField value = (ISOBinaryField) b ;
 

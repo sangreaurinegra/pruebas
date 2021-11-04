@@ -4,7 +4,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import com.util.DateUtilities;
 
 public class DateUtilitiesTest {
 
@@ -13,9 +12,9 @@ public class DateUtilitiesTest {
 		
 		Date now = new Date();
 		
-		System.out.println(DateUtilities.toString(now, DateUtilities.AAAAMMDD_DATE_FORMAT));
+//		System.out.println(DateUtilities.toString(now, DateUtilities.AAAAMMDD_DATE_FORMAT)); TODO no java 15
 		
-		System.out.println(DateUtilities.toString(now,"yyyy-MM-dd"));
+//		System.out.println(DateUtilities.toString(now,"yyyy-MM-dd")); TODO no java 15
 		
 	
 		System.out.println("Simple Date Format");
@@ -41,7 +40,7 @@ public class DateUtilitiesTest {
 		 
 		 
 		 
-		 System.out.println(DateUtilities.toDate("20/12/2015","dd/MM/yyyy"));
+//		 System.out.println(DateUtilities.toDate("20/12/2015","dd/MM/yyyy")); TODO no java 15
 		
 		 
 		 System.out.println(new SimpleDateFormat("MMdd").format(new Date()));

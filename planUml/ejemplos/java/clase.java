@@ -1,6 +1,5 @@
-package com.abitab.financial.atm.brou.vo.http2iso;
+package planUml.ejemplos.java;
 
-import com.abitab.vo.ValueObjectAXS;
 
 /*
 * @startuml
@@ -18,7 +17,7 @@ import com.abitab.vo.ValueObjectAXS;
 * @enduml
 */
 
-public class ConfirmacionCuentaDepositoAtmIsoResponse extends ValueObjectAXS {
+public class clase {
 	
 	boolean confirmacion;
 	

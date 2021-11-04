@@ -1,5 +1,6 @@
 package com.base64;
 
+import java.util.Base64;
 
 public class Base64Pruebas {
 
@@ -7,7 +8,7 @@ public class Base64Pruebas {
 
 		String enBase64 = "RnTv+tbqLWTr/VWUmOOH5w==";
 		
-		String enClaro = new String(com.crypto.Base64.decode(enBase64));
+		String enClaro = new String(Base64.getDecoder().decode(enBase64)); // TODO Verificar
 		
 		
 		

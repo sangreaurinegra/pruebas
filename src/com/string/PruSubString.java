@@ -1,6 +1,5 @@
 package com.string;
 
-import com.util.StringUtilities;
 
 public class PruSubString {
 
@@ -42,7 +41,7 @@ public class PruSubString {
 		String ret = "";
 		if (largo > 0){
 			if (entrada == null || entrada.length()<largo){
-				ret = StringUtilities.padLeft((entrada == null)? "" : entrada , largo, '0');
+//				ret = StringUtilities.padLeft((entrada == null)? "" : entrada , largo, '0');
 			}else{
 				ret = entrada.substring(0, largo);
 			}

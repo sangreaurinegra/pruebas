@@ -1,10 +1,5 @@
 package com.string;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.util.StringUtilities;
-
 public class PruString2 {
 	
 	

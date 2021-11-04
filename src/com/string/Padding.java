@@ -1,6 +1,5 @@
 package com.string;
 
-import com.util.StringUtilities;
 
 public class Padding {
 
@@ -9,10 +8,12 @@ public class Padding {
 
 		
 		String idTx="1234567890";
-		System.out.println(StringUtilities.padLeft(idTx, 6, '0'));
+//		System.out.println(StringUtilities.padLeft(idTx, 6, '0'));
 		
 		idTx="123";
-		System.out.println(StringUtilities.padLeft(idTx, 6, '0'));
+//		System.out.println(StringUtilities.padLeft(idTx, 6, '0'));
+		
+		System.out.println(idTx);
 		
 	}
 

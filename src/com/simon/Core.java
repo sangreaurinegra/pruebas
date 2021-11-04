@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Core {
 	public static Integer ERROR =-1;
@@ -51,14 +50,6 @@ public class Core {
 			
 			return retorno;
 		}
-	}
-	
-	public void setN(int n) {
-		this.n = n;
-	}
-	
-	public int getN() {
-		return n;
 	}
 	
 	private int nuevoNumero(){

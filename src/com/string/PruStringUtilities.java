@@ -1,6 +1,5 @@
 package com.string;
 
-import com.util.StringUtilities;
 
 public class PruStringUtilities {
 
@@ -25,9 +24,9 @@ public class PruStringUtilities {
 		if(fieldValue!=null){
 			int length = fieldValue.length();
 			if (length < 9) length = 9;
-			String firstSix = StringUtilities.getMostLeft(fieldValue, 6);
-			String lastThree = StringUtilities.getMostRight(fieldValue, 3);
-			nroTarjetaOfuscado = firstSix+StringUtilities.padLeft("", (length - 9), '*')+lastThree;
+//			String firstSix = StringUtilities.getMostLeft(fieldValue, 6);
+//			String lastThree = StringUtilities.getMostRight(fieldValue, 3);
+//			nroTarjetaOfuscado = firstSix+StringUtilities.padLeft("", (length - 9), '*')+lastThree;
 		}
 		return nroTarjetaOfuscado;
 	}

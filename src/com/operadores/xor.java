@@ -1,8 +1,5 @@
 package com.operadores;
 
-import com.online.bt.interfasesistemasexternos.sistemasfox.services.SistemasFoxServices;
-import com.online.bt.transaccionescentral.vo.Partida;
-
 public class xor {
 
 	/**
@@ -18,26 +15,26 @@ public class xor {
 		
 		System.out.println("esDebe, estorno -> Algoritmo Comun | Algoritmo Xor");
 		salidaComun=comun(esDebe, estorno);
-		salidaXor=xor(esDebe, estorno);
+		salidaXor=exor(esDebe, estorno);
 		imprimirSalida(salidaComun, salidaXor, estorno, esDebe);
 		
 		estorno=false; 
 		esDebe=true;
 		salidaComun=comun(esDebe, estorno);
-		salidaXor=xor(esDebe, estorno);
+		salidaXor=exor(esDebe, estorno);
 		imprimirSalida(salidaComun, salidaXor, estorno, esDebe);
 		
 		estorno=false; 
 		esDebe=false;
 		salidaComun=comun(esDebe, estorno);
-		salidaXor=xor(esDebe, estorno);
+		salidaXor=exor(esDebe, estorno);
 		imprimirSalida(salidaComun, salidaXor, estorno, esDebe);
 		
 		
 		estorno=true; 
 		esDebe=false;
 		salidaComun=comun(esDebe, estorno);
-		salidaXor=xor(esDebe, estorno);
+		salidaXor=exor(esDebe, estorno);
 		imprimirSalida(salidaComun, salidaXor, estorno, esDebe);
 		
 	}
@@ -70,7 +67,7 @@ public class xor {
 		return salida;
 	}
 	
-	private static String xor(boolean esDebe, boolean estorno){
+	private static String exor(boolean esDebe, boolean estorno){
 		String salida = "";
 		
 		if (esDebe ^ estorno){

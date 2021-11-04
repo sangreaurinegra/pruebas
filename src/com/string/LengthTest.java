@@ -1,7 +1,5 @@
 package com.string;
 
-import com.util.StringUtilities;
-
 public class LengthTest {
 	/**
 	 * @param args

@@ -1,6 +1,5 @@
 package com.string;
 
-import com.util.StringUtilities;
 
 public class PaddingStr {
 	
@@ -9,7 +8,7 @@ public class PaddingStr {
 		if (largo != null && largo > 0){
 			if (entrada == null) entrada = "";
 			if (entrada.length() < largo){
-				ret = StringUtilities.padLeft(entrada , largo, fill);
+//				ret = StringUtilities.padLeft(entrada , largo, fill);
 			}else{
 				ret = entrada.substring(0, largo);
 			}
@@ -22,7 +21,7 @@ public class PaddingStr {
 		if (largo != null && largo > 0){
 			if (entrada == null) entrada = "";
 			if (entrada.length() < largo){
-				ret = StringUtilities.padRight(entrada , largo, fill);
+//				ret = StringUtilities.padRight(entrada , largo, fill);
 			}else{
 				ret = entrada.substring(0, largo);
 			}

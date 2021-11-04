@@ -1,17 +1,13 @@
 package com.bite;
 
-import javax.xml.bind.DatatypeConverter;
-
-
-
 public class Byte {
 
 	public static String toHexString(byte[] array) {
-	    return DatatypeConverter.printHexBinary(array);
+	    return null;//DatatypeConverter.printHexBinary(array); TODO no soporte en jdk15
 	}
 
 	public static byte[] toByteArray(String s) {
-	    return DatatypeConverter.parseHexBinary(s);
+	    return null;//DatatypeConverter.parseHexBinary(s);  TODO no soporte en jdk15
 	}
 	
 //	/* s must be an even-length string. */

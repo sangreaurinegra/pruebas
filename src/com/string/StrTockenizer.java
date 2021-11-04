@@ -2,7 +2,6 @@ package com.string;
 
 import java.util.StringTokenizer;
 
-import com.util.StringUtilities;
 
 public class StrTockenizer {
 	
@@ -36,7 +35,7 @@ public class StrTockenizer {
 			String titulo = stTok124[1];  //FECH NACIMIENTO ... ETC 
 			campo59 += titulo+"|"; //titulo
 			campo59 += stTok124[2]+"|"; //opciones
-			campo59 += tipoSeleccion+"^"+titulo; // envío valores de retorno para no mantener estado en opcion sleccionada con separador ^
+			campo59 += tipoSeleccion+"^"+titulo; // envï¿½o valores de retorno para no mantener estado en opcion sleccionada con separador ^
 		
 		
 			System.out.println("Campo -->"+campo59);
@@ -54,7 +53,7 @@ public class StrTockenizer {
 		stTok59.nextToken(); // lo descarto  el command del mx (01)
 		
 		if(cantTokens==4){
-			System.out.println("123 -->"+StringUtilities.padLeft(stTok59.nextToken(), 12, '0'));
+//			System.out.println("123 -->"+StringUtilities.padLeft(stTok59.nextToken(), 12, '0'));
 		}
 		
 		String opcion = stTok59.nextToken();
@@ -88,7 +87,7 @@ public class StrTockenizer {
 		String opcion = null;
 		
 		if(cantTokens==4){
-			System.out.println("123 -->"+StringUtilities.padLeft(stTok59[1], 12, '0'));
+//			System.out.println("123 -->"+StringUtilities.padLeft(stTok59[1], 12, '0'));
 			opcion = stTok59[2];
 			stTokEstado = stTok59[3].split("\\^");
 		}else{
